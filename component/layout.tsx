@@ -38,7 +38,7 @@ const Layout = ({ children }: any) => {
       <div className="content">
         <Navbar />
         {children}
-        <footer>Copyright &copy; 2022</footer>
+        <footer>Copyright &copy; 2025</footer>
       </div>
     </>
   );

@@ -6,7 +6,11 @@ const Main = () => {
     <div className={style.box}>
       <h1>👋 Hi, I'm Raman.</h1>
       <p className={style.boxText}>
-        I'm a web developer from Indore (M.P.), India. I’m currently the
+        Frontend Software Developers specializing in Next.js and React.js create
+        dynamic, scalable web applications that deliver seamless user
+        experiences. They harness component-based architectures and modern
+        development practices to build high-performance, interactive interfaces.
+        {/* I'm a web developer from Indore (M.P.), India. I’m currently the
         developer at a local agency,
         <a
           href="https://www.systango.com/"
@@ -16,7 +20,7 @@ const Main = () => {
         >
           Systango.
         </a>
-        In my spare time I like DIY, gaming and building my own projects.
+        In my spare time I like DIY, gaming and building my own projects. */}
       </p>
       <p className="mt-4">
         I'm on
