@@ -20,6 +20,9 @@
 /**
  * @type {import('next').NextConfig}
  */
+
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
   output: "export",
 
@@ -31,10 +34,13 @@ const nextConfig = {
 
   // Optional: Change the output directory `out` -> `dist`
   // distDir: "dist",
-  basePath: "/my-portfolio", // Replace with your GitHub repo name
+  //   basePath: "/my-portfolio", // Replace with your GitHub repo name
   //   images: {
   //     unoptimized: true, // Disable image optimization (as GitHub Pages does not support it)
   //   },
+  images: { unoptimized: true }, // Optional: Disable image optimization for static export
+  basePath: isProd ? "/my-portfolio" : "", // Set base path only in production
+  assetPrefix: isProd ? "/my-portfolio" : "", // Ensure assets load correctly
 };
 
 module.exports = nextConfig;
