@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import Main from "./Main/main";
 import style from "./navbar.module.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className={style.navFirst}>
         <Link href="/">
           <div className="logo container navLink">
-            <Image
+            <img
               src="/profile_pic.png"
               alt="site logo"
               width={100}

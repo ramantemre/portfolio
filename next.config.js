@@ -9,9 +9,9 @@ const nextConfig = {
       "/about": { page: "/about" },
     };
   },
-  assetPrefix: prod ? "/my-portfolio" : "",
+  assetPrefix: prod ? "/portfolio" : "",
   env: {
-    BACKEND_URL: prod ? "/my-portfolio" : "",
+    BACKEND_URL: prod ? "/portfolio" : "",
   },
 };
 
